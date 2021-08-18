@@ -50,8 +50,10 @@ example
  ),
 ```
 
-## Additional information (補足情報)
-  
+## Additional information 
+
+Thank for using this package!  
+if it has some problem, please write issues in this repository.  
 
 ## Github  
   https://github.com/iseruuuuu/bottom_progress

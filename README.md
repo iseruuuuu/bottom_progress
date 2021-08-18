@@ -44,7 +44,6 @@ Tap `Pub get` in your pubspec.yaml file.
 
 ## Usage 
 
-example  
 ```
  BottomProgresss(
    // Number of page count.

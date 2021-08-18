@@ -16,6 +16,14 @@ and the Flutter guide for
 This package is bottom progress.  
 You can use page route, tutorial route and more..
  
+ <image src = "https://user-images.githubusercontent.com/67954894/129921331-9873d138-87bf-4c74-ae07-5e75f0b1d368.png" width = 30%>
+
+  <image src = "https://user-images.githubusercontent.com/67954894/129921336-3a7d28e6-c5a2-45f2-baa7-314d00e3005f.png" width = 30%>
+    <image src = "https://user-images.githubusercontent.com/67954894/129921350-7f88e524-f7b3-4b64-8ea4-73fa31183b76.png" width = 30%>
+     
+
+   
+
 
 ## Getting started 
 

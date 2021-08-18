@@ -11,30 +11,46 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# bottom_progress
 
-## Features
+This package is bottom progress.  
+You can use page route, tutorial route and more..
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+## Getting started 
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+<!-- 追加したもの -->
+①
+Add the dependency to your pubspec.yaml file.  
+```
+  dependencies:  
+    flutter:  
+      sdk: flutter  
+    bottom_progress:   
 ```
 
-## Additional information
+②
+Tap `Pub get` in your pubspec.yaml file.
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
-# bottom_progress
+## Usage 
+
+```
+ BottomProgresss(
+   // OnColor page
+   pointCount: 1,
+   // Amount of bottom progress
+   pageCount: 10,
+   // page
+   onColor: Colors.pink,
+   // other page
+   offColor: Colors.grey,
+   // bottom progress size
+   fontSize: 40,
+ ),
+```
+
+## Additional information (補足情報)
+  
+
+## Github  
+  https://github.com/iseruuuuu/bottom_progress

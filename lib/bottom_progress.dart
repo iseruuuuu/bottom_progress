@@ -2,7 +2,7 @@ library bottom_progress;
 import 'package:flutter/widgets.dart';
 import 'dart:ui' as ui show Shadow, FontFeature, TextLeadingDistribution;
 
-class BottomProgresss extends StatelessWidget {
+class BottomProgress extends StatelessWidget {
   //必須項目　required code
   final int pointCount;
   final int pageCount;
@@ -32,7 +32,7 @@ class BottomProgresss extends StatelessWidget {
   final List<ui.FontFeature>? fontFeatures;
   final TextOverflow? overflow;
 
-  const BottomProgresss({
+  const BottomProgress({
     Key? key,
     required this.pointCount,
     required this.pageCount,
@@ -78,7 +78,30 @@ class BottomProgresss extends StatelessWidget {
               color: pointCount == index
                   ? onColor
                   : offColor,
-
+              inherit: inherit,
+              backgroundColor: backgroundColor,
+              fontWeight: fontWeight,
+              fontStyle: fontStyle,
+              letterSpacing: letterSpacing,
+              wordSpacing: wordSpacing,
+              textBaseline: textBaseline,
+              height: height,
+              leadingDistribution: leadingDistribution,
+              locale: locale,
+              foreground: foreground,
+              background: background,
+              shadows: shadows,
+              fontFeatures: fontFeatures,
+              decoration: decoration,
+              decorationColor: decorationColor,
+              decorationStyle: decorationStyle,
+              decorationThickness: decorationThickness,
+              debugLabel: debugLabel,
+              //わからん？？
+              // fontFamilyFallback: fontFamilyFallback,
+              // package: package,
+              overflow: overflow,
+              fontFamily: fontFamily,
             ),
           ),
       ],

@@ -47,7 +47,7 @@ Tap `Pub get` in your pubspec.yaml file.
 example  
 ```
  BottomProgresss(
-   // Bottom progress of onColor
+   // Number of page count.
    pointCount: 1,
    // Amount of bottom progress
    pageCount: 10,

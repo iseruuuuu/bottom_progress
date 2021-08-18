@@ -30,13 +30,14 @@ Add the dependency to your pubspec.yaml file.
 ```
 
 ②
-Tap `Pub get` in your pubspec.yaml file.
+Tap `Pub get` in your pubspec.yaml file.  
 
 ## Usage 
 
+example  
 ```
  BottomProgresss(
-   // OnColor page
+   // Bottom progress of onColor
    pointCount: 1,
    // Amount of bottom progress
    pageCount: 10,

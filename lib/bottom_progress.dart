@@ -78,6 +78,7 @@ class BottomProgresss extends StatelessWidget {
               color: pointCount == index
                   ? onColor
                   : offColor,
+
             ),
           ),
       ],

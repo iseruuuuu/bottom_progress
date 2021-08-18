@@ -1,15 +1,33 @@
 library bottom_progress;
 import 'package:flutter/widgets.dart';
-import 'dart:ui' as ui show Shadow, FontFeature, TextLeadingDistribution;
+import 'dart:ui' as ui show Shadow, FontFeature, TextLeadingDistribution, TextHeightBehavior;
 
 class BottomProgress extends StatelessWidget {
-  //必須項目　required code
+
+  //style
+  final String? data;
+  final InlineSpan? textSpan;
+  final StrutStyle? strutStyle;
+  final TextAlign? textAlign;
+  final TextDirection? textDirection;
+  final Locale? locale;
+  final bool? softWrap;
+  final TextOverflow? overflow;
+  final double? textScaleFactor;
+  final int? maxLines;
+  final String? semanticsLabel;
+  final TextWidthBasis? textWidthBasis;
+  final ui.TextHeightBehavior? textHeightBehavior;
+
+  //textStyle
+  //required
   final int pointCount;
   final int pageCount;
   final Color onColor;
   final Color offColor;
   final double? fontSize;
 
+  //nullable
   final bool inherit;
   final Color? backgroundColor;
   final String? fontFamily;
@@ -20,7 +38,6 @@ class BottomProgress extends StatelessWidget {
   final TextBaseline? textBaseline;
   final double? height;
   final ui.TextLeadingDistribution? leadingDistribution;
-  final Locale? locale;
   final Paint? foreground;
   final Paint? background;
   final TextDecoration? decoration;
@@ -30,16 +47,33 @@ class BottomProgress extends StatelessWidget {
   final String? debugLabel;
   final List<ui.Shadow>? shadows;
   final List<ui.FontFeature>? fontFeatures;
-  final TextOverflow? overflow;
+
 
   const BottomProgress({
     Key? key,
+    //style
+    this.strutStyle,
+    this.textAlign,
+    this.textDirection,
+    this.locale,
+    this.softWrap,
+    this.overflow,
+    this.textScaleFactor,
+    this.maxLines,
+    this.semanticsLabel,
+    this.textWidthBasis,
+    this.textHeightBehavior,
+
+
+    //textStyle
+    //required
     required this.pointCount,
     required this.pageCount,
     required this.onColor,
     required this.offColor,
-    this.fontSize,
 
+    //nullable
+    this.fontSize,
     this.inherit = true,
     this.backgroundColor,
     this.fontWeight,
@@ -49,7 +83,6 @@ class BottomProgress extends StatelessWidget {
     this.textBaseline,
     this.height,
     this.leadingDistribution,
-    this.locale,
     this.foreground,
     this.background,
     this.shadows,
@@ -59,9 +92,6 @@ class BottomProgress extends StatelessWidget {
     this.decorationStyle,
     this.decorationThickness,
     this.debugLabel,
-    List<String>? fontFamilyFallback,
-    String? package,
-    this.overflow,
     this.fontFamily,
   }) : super(key: key);
 
@@ -97,9 +127,6 @@ class BottomProgress extends StatelessWidget {
               decorationStyle: decorationStyle,
               decorationThickness: decorationThickness,
               debugLabel: debugLabel,
-              //わからん？？
-              // fontFamilyFallback: fontFamilyFallback,
-              // package: package,
               overflow: overflow,
               fontFamily: fontFamily,
             ),

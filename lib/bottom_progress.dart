@@ -3,10 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'dart:ui' as ui show Shadow, FontFeature, TextLeadingDistribution, TextHeightBehavior;
 
 class BottomProgress extends StatelessWidget {
-
-  //style
-  final String? data;
-  final InlineSpan? textSpan;
+  //style nullable
   final StrutStyle? strutStyle;
   final TextAlign? textAlign;
   final TextDirection? textDirection;
@@ -48,7 +45,6 @@ class BottomProgress extends StatelessWidget {
   final List<ui.Shadow>? shadows;
   final List<ui.FontFeature>? fontFeatures;
 
-
   const BottomProgress({
     Key? key,
     //style
@@ -63,7 +59,6 @@ class BottomProgress extends StatelessWidget {
     this.semanticsLabel,
     this.textWidthBasis,
     this.textHeightBehavior,
-
 
     //textStyle
     //required
@@ -130,6 +125,12 @@ class BottomProgress extends StatelessWidget {
               overflow: overflow,
               fontFamily: fontFamily,
             ),
+            textAlign: textAlign,
+            softWrap: softWrap,
+            overflow: overflow,
+            maxLines: maxLines,
+            textWidthBasis: textWidthBasis,
+            textHeightBehavior: textHeightBehavior,
           ),
       ],
     );

@@ -43,7 +43,6 @@ Add the dependency to your pubspec.yaml file.
 Tap `Pub get` in your pubspec.yaml file.  
 
 ## Usage 
-
 ```
  BottomProgresss(
    // Number of page count.
@@ -62,7 +61,7 @@ Tap `Pub get` in your pubspec.yaml file.
 ## Additional information 
 
 Thank for using this package!  
-if it has some problem, please write issues in this repository.  
+if it has some problems, please write issues in this repository.  
 
 ## Github  
   https://github.com/iseruuuuu/bottom_progress

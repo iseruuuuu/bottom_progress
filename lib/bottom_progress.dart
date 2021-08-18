@@ -13,9 +13,6 @@ class BottomProgresss extends StatelessWidget {
   final bool inherit;
   final Color? backgroundColor;
   final String? fontFamily;
-  List<String>? get fontFamilyFallback => _package != null && _fontFamilyFallback != null ? _fontFamilyFallback!.map((String str) => 'packages/$_package/$str').toList() : _fontFamilyFallback;
-  final List<String>? _fontFamilyFallback;
-  final String? _package;
   final FontWeight? fontWeight;
   final FontStyle? fontStyle;
   final double? letterSpacing;
@@ -43,7 +40,6 @@ class BottomProgresss extends StatelessWidget {
     required this.offColor,
     this.fontSize,
 
-
     this.inherit = true,
     this.backgroundColor,
     this.fontWeight,
@@ -63,13 +59,10 @@ class BottomProgresss extends StatelessWidget {
     this.decorationStyle,
     this.decorationThickness,
     this.debugLabel,
-    String? fontFamily,
     List<String>? fontFamilyFallback,
     String? package,
     this.overflow,
     this.fontFamily,
-    this._fontFamilyFallback,
-    this._package,
   }) : super(key: key);
 
   @override

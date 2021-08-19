@@ -27,9 +27,8 @@ You can use page route, tutorial route and more..
    
 
 
-## Getting started 
+## Getting started   
 
-<!-- 追加したもの -->
 ①
 Add the dependency to your pubspec.yaml file.  
 ```
